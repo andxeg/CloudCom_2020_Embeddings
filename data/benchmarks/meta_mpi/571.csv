@@ -1,0 +1,374 @@
+HARDWARE
+
+"Number of nodes",16
+"Uses of the node",compute
+Vendor,Dell
+Model,"PowerEdge M620 Installed in PowerEdge M1000e"
+,"blade chassis"
+"CPU Name","Intel Xeon E5-2680"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",16
+"Cores per chip",8
+"Threads per core",1
+"CPU Characteristics","Intel Turbo Boost Technology up to 3.5 GHz,"
+,"8.0 GT/s QPI, Hyper-Threading disabled"
+"CPU MHz",2700
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","20 MB I+D on chip per chip, 20 MB shared / 8 cores"
+"Other Cache",None
+Memory,"64 GB (8 x 8 GB 2Rx4 PC3-12800R-11, ECC)"
+"Disk Subsystem","Seagate 146 GB SAS ST9146803SS"
+"Other Hardware",None
+Adapter,"Onboard Intel X520-k"
+,"Ethernet Controller"
+"Number of Adapters",1
+"Slot Type","PCI-Express x16"
+"Data Rate","1Gbps Ethernet"
+"Ports Used",1
+"Interconnect Type",Ethernet
+Adapter,"Mellanox ConnectX2 Quad Data Rate IB PCIe 2.0"
+,"(Installed in Fabric C)"
+"Number of Adapters",1
+"Slot Type","PCIe x8 Gen2"
+"Data Rate","InfiniBand 4x QDR"
+"Ports Used",1
+"Interconnect Type",InfiniBand
+
+SOFTWARE
+
+Adapter,"Onboard Intel X520-k"
+,"Ethernet Controller"
+"Adapter Driver",3.4.8-k
+"Adapter Firmware",13.1.9
+Adapter,"Mellanox ConnectX2 Quad Data Rate IB PCIe 2.0"
+,"(Installed in Fabric C)"
+"Adapter Driver",MLNX_OFED_LINUX-1.5.3-3.0.0-rhel6.2-x86_64
+"Adapter Firmware",2.9.1000
+"Operating System","Red Hat EL 6.2, kernel 2.6.32-220.el6.x86_64"
+"Local File System",Linux/ext2
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software",None
+
+
+"Node Description: PowerEdge R410"
+
+HARDWARE
+
+"Number of nodes",1
+"Uses of the node",fileserver
+Vendor,Intel
+Model,"PowerEdge R410"
+"CPU Name","Intel Xeon X5570 CPU"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",8
+"Cores per chip",4
+"Threads per core",1
+"CPU Characteristics",N/A
+"CPU MHz",2930
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","8 MB I+D on chip per chip"
+"Other Cache",None
+Memory,"32 GB"
+"Disk Subsystem","1 disks, 500GB/disk"
+"Other Hardware",None
+Adapter,"Dual port Broadcom BCM 5716"
+,"Ethernet Controller"
+"Number of Adapters",1
+"Slot Type",Integrated
+"Data Rate","1Gbps Ethernet"
+"Ports Used",1
+"Interconnect Type",Ethernet
+
+SOFTWARE
+
+Adapter,"Dual port Broadcom BCM 5716"
+,"Ethernet Controller"
+"Adapter Driver",2.1.11
+"Adapter Firmware",9-6.2.0.17.fw
+"Operating System","Red Hat EL 6.2, kernel 2.6.32-220.el6.x86_64"
+"Local File System",None
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software",None
+
+
+"Interconnect Description: IB Switch"
+
+HARDWARE
+
+Vendor,Mellanox
+Model,"Mellanox M3601Q"
+"Switch Model","Mellanox M3601Q Installed in PowerEdge M1000e"
+,"blade chassis (Installed in slot C1)"
+"Number of Switches",1
+"Number of Ports",32
+"Data Rate","InfiniBand 4x QDR"
+Firmware,7.4.0000
+Topology,"Fat tree"
+"Primary Use","MPI traffic"
+
+
+"Interconnect Description: Gigabit Ethernet"
+
+HARDWARE
+
+Vendor,"Dell Inc."
+Model,"Intel X520-k Ethernet Controller"
+"Switch Model","PowerConnect M6220 (Modular Layer 3 blade switch"
+,"for PowerEdge M1000e blade chassis) in slot A1"
+"Number of Switches",1
+"Number of Ports",20
+"Data Rate","1Gbps Ethernet"
+Firmware,3.1.3.9
+Topology,"Fat tree"
+"Primary Use","Cluster File System"
+
+
+"BENCHMARK DETAILS"
+
+"Type of System",Homogeneous
+"Total Compute Nodes",16
+"Total Chips",32
+"Total Cores",256
+"Total Threads",256
+"Total Memory","1 TB"
+"Base Ranks Run",256
+"Minimum Peak Ranks",--
+"Maximum Peak Ranks",--
+"C Compiler","Intel C++ Composer XE 2011 for Linux, Version"
+,"12.0.5.220 Build 20110719"
+"C++ Compiler","Intel C++ Composer XE 2011 for Linux, Version"
+,"12.0.5.220 Build 20110719"
+"Fortran Compiler","Intel Fortran Composer XE 2011 for Linux, Version"
+,"12.0.5.220 Build 20110719"
+"Base Pointers",64-bit
+"Peak Pointers",64-bit
+"MPI Library","Intel MPI Library 4.0.3.008 Build 20110824 for"
+,Linux
+"Other MPI Info",None
+Pre-processors,No
+"Other Software",None
+
+"Submit Notes"
+
+"The config file option 'submit' was used."
+
+"General Notes"
+
+"130.socorro (base): ""nullify_ptrs"" src.alt was used."
+
+" MPI startup command:"
+"   mpiexec.hydra command was used to start MPI jobs."
+
+" BIOS settings:"
+"   Intel Hyper-Threading Technology (SMT): Disabled (default is Enabled)"
+"   Intel Turbo Boost Technology (Turbo)  : Enabled (default is Enabled)"
+
+" RAM configuration:"
+"   Compute nodes have 2x8-GB RDIMM on each memory channel."
+
+" Network:"
+"   One 20-port switch"
+
+" Compute Node Environment:"
+"   ulimit -s = unlimited"
+"   ulimit -l = unlimited"
+"   File ""/etc/modprobe.d/mlx4_core.conf"" modified to contain ""options"
+"   mlx4_core log_mtts_per_seg=5"""
+
+
+
+
+
+
+
+"Base Compiler Invocation"
+104.milc," mpiicc"," mpiicc"
+107.leslie3d," mpiifort"," mpiifort"
+113.GemsFDTD," mpiifort"," mpiifort"
+115.fds4," mpiicc"," mpiifort"," mpiifort"
+121.pop2," mpiicc"," mpiifort"," mpiifort"
+122.tachyon," mpiicc"," mpiicc"
+126.lammps," mpiicpc"," mpiicpc"
+127.wrf2," mpiicc"," mpiifort"," mpiifort"
+128.GAPgeofem," mpiicc"," mpiifort"," mpiicc"," mpiifort"
+129.tera_tf," mpiifort"," mpiifort"
+130.socorro," mpiicc"," mpiifort"," mpiifort"
+132.zeusmp2," mpiicc"," mpiifort"," mpiifort"
+137.lu," mpiifort"," mpiifort"
+
+"Base Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2," -DSPEC_MPI_CASE_FLAG"
+122.tachyon
+126.lammps," -DMPICH_IGNORE_CXX_SEEK"
+127.wrf2," -DSPEC_MPI_CASE_FLAG"," -DSPEC_MPI_LINUX"
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Optimization Flags"
+104.milc," -O3"," -xAVX"," -no-prec-div"
+107.leslie3d," -O3"," -xAVX"," -no-prec-div"
+113.GemsFDTD," -O3"," -xAVX"," -no-prec-div"
+115.fds4," -O3"," -xAVX"," -no-prec-div"
+121.pop2," -O3"," -xAVX"," -no-prec-div"
+122.tachyon," -O3"," -xAVX"," -no-prec-div"
+126.lammps," -O3"," -xAVX"," -no-prec-div"
+127.wrf2," -O3"," -xAVX"," -no-prec-div"
+128.GAPgeofem," -O3"," -xAVX"," -no-prec-div"
+129.tera_tf," -O3"," -xAVX"," -no-prec-div"
+130.socorro," -O3"," -xAVX"," -no-prec-div"
+132.zeusmp2," -O3"," -xAVX"," -no-prec-div"
+137.lu," -O3"," -xAVX"," -no-prec-div"
+
+"Base Other Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Compiler Invocation"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Optimization Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Other Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",webmaster@spec.org.,
+"Copyright 2006-2010 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC MPI2007 ","v2.0.1.  Report","generated on ","Tue Jul 22 13:46:15 2014","by SPEC MPI2007 CSV","formatter v1463."
+"Originally published on "," 8 August 2012."

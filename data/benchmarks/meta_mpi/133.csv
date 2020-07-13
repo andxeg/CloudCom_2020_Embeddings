@@ -1,0 +1,53 @@
+HARDWARE
+
+"Number of nodes",4
+"Uses of the node",compute
+Vendor,Intel
+Model,S4TR1SY4Q
+"CPU Name","Intel Xeon E7-4890 v2"
+"CPU(s) orderable","1-4 chips"
+"Chips enabled",4
+"Cores enabled",60
+"Cores per chip",15
+"Threads per core",2
+"CPU Characteristics","Intel Turbo Boost Technology disabled,"
+,"8.0 GT/s QPI, Hyper-Threading enabled"
+"CPU MHz",2800
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","38400 KB I+D on chip per chip, 38400 KB shared /"
+,"15 cores"
+"Other Cache",None
+Memory,"512 GB (32 x 16 GB 2Rx4 PC3-12800R-11, ECC)"
+"Disk Subsystem","2 x 300 GB SAS HDDs"
+"Other Hardware",None
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Number of Adapters",1
+"Slot Type","PCI-Express x8"
+"Data Rate","1Gbps Ethernet"
+"Ports Used",2
+"Interconnect Type",Ethernet
+Adapter,"Mellanox MCX353A-FCAT ConnectX-3"
+"Number of Adapters",1
+"Slot Type","PCIe x8 Gen3"
+"Data Rate","InfiniBand 4x FDR"
+"Ports Used",1
+"Interconnect Type",InfiniBand
+
+SOFTWARE
+
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Adapter Driver",e1000
+"Adapter Firmware",None
+Adapter,"Mellanox MCX353A-FCAT ConnectX-3"
+"Adapter Driver","OFED 1.5.3.1"
+"Adapter Firmware",2.10.0
+"Operating System","Red Hat EL 6.4, kernel 2.6.32-358"
+"Local File System",Linux/ext2
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software","Platform LSF 9.1.1.1"
+
+

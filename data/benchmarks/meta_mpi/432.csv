@@ -1,0 +1,266 @@
+HARDWARE
+
+"Number of nodes",8
+"Uses of the node","compute, head, fileserver"
+Vendor,Celestica
+Model,"A2210 (""Serenade"")"
+"CPU Name","AMD Opteron 848"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",2
+"Cores per chip",1
+"Threads per core",1
+"CPU Characteristics",--
+"CPU MHz",2200
+"Primary Cache","64 KB I + 64 KB D on chip per chip"
+"Secondary Cache","1 MB I+D on chip per chip"
+"L3 Cache",None
+"Other Cache",None
+Memory,"8 GB"
+"Disk Subsystem","36 GB SCSI disk [Seagate ST336607LC - 10000 RPM]"
+"Other Hardware",--
+Adapter,"Broadcom BCM95704"
+"Number of Adapters",2
+"Slot Type","PCI (built into chipset)"
+"Data Rate","1 Gbps"
+"Ports Used",1
+"Interconnect Type","Gigabit Ethernet"
+
+SOFTWARE
+
+Adapter,"Broadcom BCM95704"
+"Adapter Driver",--
+"Adapter Firmware",--
+"Operating System","SLES 9 SP3"
+"Local File System",ReiserFS
+"Shared File System",NFS
+"System State",multi-user
+"Other Software",--
+
+
+"General Notes"
+
+"Only the first node serves as a head and fileserver node, in addition to"
+"being a compute node.  All other nodes are compute nodes only."
+
+"Interconnect Description: Baseline Cluster Interconnect"
+
+HARDWARE
+
+Vendor,Broadcom
+Model,BCM95704
+"Switch Model","SMC TigerSwitch 10/100/1000 8624T"
+"Number of Switches",1
+"Number of Ports",16
+"Data Rate","1 Gbps"
+Firmware,--
+Topology,"star (single switch)"
+"Primary Use","MPI and filesystem traffic"
+
+
+"BENCHMARK DETAILS"
+
+"Type of System",Homogenous
+"Total Compute Nodes",8
+"Total Chips",16
+"Total Cores",16
+"Total Threads",16
+"Total Memory","64 GB"
+"Base Ranks Run",16
+"Minimum Peak Ranks",16
+"Maximum Peak Ranks",16
+"C Compiler","Pathscale 2.5"
+"C++ Compiler","Pathscale 2.5"
+"Fortran Compiler","Pathscale 2.5"
+"Base Pointers",64-bit
+"Peak Pointers","Not Applicable"
+"MPI Library","MPICH2 1.0.3"
+"Other MPI Info",None
+Pre-processors,No
+"Other Software","ACML 3.6.0 (BLAS/LAPACK routines)"
+
+"Base Compiler Invocation"
+104.milc," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"
+107.leslie3d," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+113.GemsFDTD," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+115.fds4," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+121.pop2," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+122.tachyon," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"
+126.lammps," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicxx"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicxx"
+127.wrf2," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+128.GAPgeofem," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+129.tera_tf," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+130.socorro," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+132.zeusmp2," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpicc"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+137.lu," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"," /opt/mpich2-1.0.3-pathscale-2.4/bin/mpif90"
+
+"Base Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4," -DSPEC_MPI_LC_TRAILING_DOUBLE_UNDERSCORE"
+121.pop2," -DSPEC_MPI_DOUBLE_UNDERSCORE"
+122.tachyon
+126.lammps," -DMPICH_IGNORE_CXX_SEEK"
+127.wrf2," -DF2CSTYLE"," -DSPEC_MPI_DOUBLE_UNDERSCORE"," -DSPEC_MPI_LINUX"
+128.GAPgeofem
+129.tera_tf
+130.socorro," -fno-second-underscore"
+132.zeusmp2
+137.lu
+
+"Base Optimization Flags"
+104.milc," -O2"," -LANG:copyinout=OFF"
+107.leslie3d," -O2"," -LANG:copyinout=OFF"
+113.GemsFDTD," -O2"," -LANG:copyinout=OFF"
+115.fds4," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+121.pop2," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+122.tachyon," -O2"," -LANG:copyinout=OFF"
+126.lammps," -O2"," -LANG:copyinout=OFF"
+127.wrf2," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+128.GAPgeofem," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+129.tera_tf," -O2"," -LANG:copyinout=OFF"
+130.socorro," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+132.zeusmp2," -O2"," -LANG:copyinout=OFF"," -O2"," -LANG:copyinout=OFF"
+137.lu," -O2"," -LANG:copyinout=OFF"
+
+"Base Other Flags"
+104.milc
+107.leslie3d," -I."
+113.GemsFDTD," -I."
+115.fds4," -I."," -I."
+121.pop2
+122.tachyon," -I."
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf," -I."
+130.socorro
+132.zeusmp2
+137.lu," -I."
+
+"Base Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Compiler Invocation"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Optimization Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Other Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",webmaster@spec.org.,
+"Copyright 2006-2010 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC MPI2007 ","v60.  Report","generated on ","Tue Jul 22 13:32:17 2014","by SPEC MPI2007 CSV","formatter v1463."
+"Originally published on ","16 July 2007."

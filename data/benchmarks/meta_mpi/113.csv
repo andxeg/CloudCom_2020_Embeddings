@@ -1,0 +1,52 @@
+HARDWARE
+
+"Number of nodes",16
+"Uses of the node",compute
+Vendor,Intel
+Model,R1208GLBPP
+"CPU Name","Intel Xeon E5-2670"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",16
+"Cores per chip",8
+"Threads per core",2
+"CPU Characteristics","Intel Turbo Boost Technology disabled,"
+,"8.0 GT/s QPI, Hyper-Threading enabled"
+"CPU MHz",2600
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","20 MB I+D on chip per chip, 20 MB shared / 8 cores"
+"Other Cache",None
+Memory,"64 GB (8 x 8 GB 2Rx4 PC3-12800R-11, ECC)"
+"Disk Subsystem","Seagate 600 GB SSD ST9600205SS"
+"Other Hardware",None
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Number of Adapters",1
+"Slot Type","PCI-Express x8"
+"Data Rate","1Gbps Ethernet"
+"Ports Used",2
+"Interconnect Type",Ethernet
+Adapter,"Mellanox MHQH29-XTC"
+"Number of Adapters",1
+"Slot Type","PCIe x8 Gen2"
+"Data Rate","InfiniBand 4x QDR"
+"Ports Used",1
+"Interconnect Type",InfiniBand
+
+SOFTWARE
+
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Adapter Driver",e1000
+"Adapter Firmware",None
+Adapter,"Mellanox MHQH29-XTC"
+"Adapter Driver","OFED 1.5.3.1"
+"Adapter Firmware",2.10.0
+"Operating System","Red Hat EL 6.1, kernel 2.6.32-131"
+"Local File System",Linux/ext2
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software","Platform LSF 8.0"
+
+

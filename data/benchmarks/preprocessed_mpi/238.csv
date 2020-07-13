@@ -1,0 +1,14 @@
+Benchmark,"Base # Ranks","Base Run Time","Base Ratio","Base Selected","Base Status","Peak # Ranks","Peak Run Time","Peak Ratio","Peak Selected","Peak Status",Description
+121.pop2,NC,NC,NC,NC,NC,,,,,NR
+122.tachyon,NC,NC,NC,NC,NC,,,,,NR
+125.RAxML,NC,NC,NC,NC,NC,,,,,NR
+126.lammps,NC,NC,NC,NC,NC,,,,,NR
+128.GAPgeofem,NC,NC,NC,NC,NC,,,,,NR
+129.tera_tf,NC,NC,NC,NC,NC,,,,,NR
+132.zeusmp2,NC,NC,NC,NC,NC,,,,,NR
+137.lu,NC,NC,NC,NC,NC,,,,,NR
+142.dmilc,NC,NC,NC,NC,NC,,,,,NR
+143.dleslie,NC,NC,NC,NC,NC,,,,,NR
+145.lGemsFDTD,NC,NC,NC,NC,NC,,,,,NR
+147.l2wrf2,NC,NC,NC,NC,NC,,,,,NR
+

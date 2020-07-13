@@ -1,0 +1,43 @@
+HARDWARE
+
+"Number of nodes",5
+"Uses of the node",compute
+Vendor,"Lenovo Global Technology"
+Model,SR650
+"CPU Name","Intel Xeon Platinum 8280"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",56
+"Cores per chip",28
+"Threads per core",1
+"CPU Characteristics",None
+"CPU MHz",2700
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","1 MB I+D on chip per core"
+"L3 Cache","38.5 MB I+D on chip per chip"
+"Other Cache",None
+Memory,"768 GB (24 x 32 GB 2Rx4 PC4-2933Y-R)"
+"Disk Subsystem","1 x 1 TB 12 Gbps SAS 2.5"" SSD (JBOD)"
+"Other Hardware","ThinkSystem RAID 530-8i"
+Adapter,"Intel Omni-Path 100 Series Single-port PCIe 3.0"
+,"x16 HFA"
+"Number of Adapters",1
+"Slot Type","PCI-Express Gen3 x16"
+"Data Rate","100 Gb/s"
+"Ports Used",1
+"Interconnect Type","Intel Omni-Path Fabric 100 Series"
+
+SOFTWARE
+
+Adapter,"Intel Omni-Path 100 Series Single-port PCIe 3.0"
+,"x16 HFA"
+"Adapter Driver","IFS 10.9.1.0.15"
+"Adapter Firmware",10.9.0.1.0
+"Operating System","Red Hat Enterprise Linux Server release 7.6,"
+,"Kernel 3.10.0-957.el7.x86_64"
+"Local File System",xfs
+"Shared File System",nfs
+"System State","Multi-user, run level 3"
+"Other Software",NONE
+
+

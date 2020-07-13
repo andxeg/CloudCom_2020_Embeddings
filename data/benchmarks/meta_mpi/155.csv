@@ -1,0 +1,294 @@
+HARDWARE
+
+"Number of nodes",8
+"Uses of the node","compute, head, fileserver"
+Vendor,"Dell Inc."
+Model,M605
+"CPU Name","AMD Opteron CPU 2350"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",8
+"Cores per chip",4
+"Threads per core",1
+"CPU Characteristics","Quad-Core AMD Opteron Processor 2350 (Barcelona)"
+"CPU MHz",2000
+"Primary Cache","64 KB I + 64 KB D on chip per core"
+"Secondary Cache","512 KB I+D on chip per core"
+"L3 Cache","2 MB I+D on chip per chip"
+"Other Cache",None
+Memory,"16 GB (4 x 4 GB DIMMs, 667 MHz)"
+"Disk Subsystem","10K RPM Serial-Attach SCSI 3Gbps 2.5-in HotPlug"
+,"Hard Drive"
+"Other Hardware",None
+Adapter,"Broadcom Corporation NetXtreme II BCM5708S"
+,"Gigabit Ethernet (rev 12)"
+"Number of Adapters",1
+"Slot Type","PCIe x8"
+"Data Rate","1 Gbps"
+"Ports Used",1
+"Interconnect Type","Gigabit Ethernet"
+
+SOFTWARE
+
+Adapter,"Broadcom Corporation NetXtreme II BCM5708S"
+,"Gigabit Ethernet (rev 12)"
+"Adapter Driver","OS default (bnx2, v1.5.11)"
+"Adapter Firmware",4.4.1
+"Operating System","RHEL 5.1 (x86_64)"
+,"Kernel 2.6.18-53.el5"
+"Local File System",ext3
+"Shared File System",NFSv3
+"System State",multi-user
+"Other Software",None
+
+
+"Interconnect Description: Gigabit Ethernet"
+
+HARDWARE
+
+Vendor,"Dell Inc."
+Model,"24 port Gigabit Ethernet switch"
+"Switch Model","PowerConnect 5324"
+"Number of Switches",1
+"Number of Ports",24
+"Data Rate","1 Gbps Ethernet"
+Firmware,"sw: v2.0.0.39, boot: v1.0.2.02, hw: 00.00.02"
+Topology,"Single Switch"
+"Primary Use","MPI and file system traffic"
+
+
+"BENCHMARK DETAILS"
+
+"Type of System",Homogenous
+"Total Compute Nodes",8
+"Total Chips",16
+"Total Cores",64
+"Total Threads",64
+"Total Memory","128 GB"
+"Base Ranks Run",64
+"Minimum Peak Ranks",--
+"Maximum Peak Ranks",--
+"C Compiler","Intel C Compiler 10.1 for Linux (10.1.018)"
+"C++ Compiler","Intel C++ Compiler 10.1 for Linux (10.1.018)"
+"Fortran Compiler","Intel Fortran Compiler 10.1 for Linux (10.1.018)"
+"Base Pointers",64-bit
+"Peak Pointers","Not Applicable"
+"MPI Library","Scali MPI Connect 5.6.4-59151"
+"Other MPI Info","Platform Computing Inc has acquired Scali MPI"
+,"Connect, hence Platform MPI and Scali MPI Connect"
+,"are used synonymously."
+Pre-processors,None
+"Other Software",None
+
+"Submit Notes"
+
+"The config file option 'submit' was used."
+
+"General Notes"
+
+"Dell PowerConnect 5324 configuration details:"
+
+"   Ports 9-16 were used and configured the following way:"
+"                                                Flow Link          Back   Mdix"
+"   Port     Type         Duplex  Speed Neg      ctrl State       Pressure Mode"
+"   -------- ------------ ------  ----- -------- ---- ----------- -------- -------"
+"   g9       1G-Copper    Full    1000  Enabled  On   Up          Disabled Off"
+
+
+"Broadcom NetXtreme II BCM5708S Coalesce Settings:"
+
+"   The following coalesce settings were applied on all nodes:"
+"   ethtool -C eth0 rx-usecs 7 rx-frames 2 rx-usecs-irq 14 rx-frames-irq 4 tx-usecs 20 tx-frames 5 tx -usecs-irq 40 tx-frames-irq 10"
+
+
+"NFS server usage:"
+
+"   The first node was used as NFS server. The other 7 nodes mounted the working directory from the first node."
+
+
+
+"Base Compiler Invocation"
+104.milc," mpicc  -ccl icc"," mpicc  -ccl icc"
+107.leslie3d," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+113.GemsFDTD," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+115.fds4," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+121.pop2," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+122.tachyon," mpicc  -ccl icc"," mpicc  -ccl icc"
+126.lammps," mpicc  -ccl icpc"," mpicc  -ccl icpc"
+127.wrf2," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+128.GAPgeofem," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpicc  -ccl icc"," mpif77 -ccl ifort"
+129.tera_tf," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+130.socorro," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+132.zeusmp2," mpicc  -ccl icc"," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+137.lu," mpif77 -ccl ifort"," mpif77 -ccl ifort"
+
+"Base Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2," -DSPEC_MPI_CASE_FLAG"
+122.tachyon
+126.lammps
+127.wrf2," -DSPEC_MPI_LINUX"," -DSPEC_MPI_CASE_FLAG"
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Optimization Flags"
+104.milc," -O3"," -ipo"," -no-prec-div"," -axS"
+107.leslie3d," -O3"," -ipo"," -no-prec-div"," -axS"
+113.GemsFDTD," -O3"," -ipo"," -no-prec-div"," -axS"
+115.fds4," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+121.pop2," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+122.tachyon," -O3"," -ipo"," -no-prec-div"," -axS"
+126.lammps," -O3"," -ipo"," -no-prec-div"," -axS"
+127.wrf2," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+128.GAPgeofem," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+129.tera_tf," -O3"," -ipo"," -no-prec-div"," -axS"
+130.socorro," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+132.zeusmp2," -O3"," -ipo"," -no-prec-div"," -axS"," -O3"," -ipo"," -no-prec-div"," -axS"
+137.lu," -O3"," -ipo"," -no-prec-div"," -axS"
+
+"Base Other Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Base Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Compiler Invocation"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Portability Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Optimization Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Other Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Forbidden Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+
+"Peak Unknown Flags"
+104.milc
+107.leslie3d
+113.GemsFDTD
+115.fds4
+121.pop2
+122.tachyon
+126.lammps
+127.wrf2
+128.GAPgeofem
+129.tera_tf
+130.socorro
+132.zeusmp2
+137.lu
+----------------
+"For questions about","this result, please","contact the tester.",
+"For other inquiries,","please contact",webmaster@spec.org.,
+"Copyright 2006-2010 Standard","Performance Evaluation",Corporation,
+"Tested with SPEC MPI2007 ","v1.1.  Report","generated on ","Tue Jul 22 13:34:57 2014","by SPEC MPI2007 CSV","formatter v1463."
+"Originally published on "," 4 December 2008."

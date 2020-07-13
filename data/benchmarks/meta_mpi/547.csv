@@ -1,0 +1,42 @@
+HARDWARE
+
+"Number of nodes",2
+"Uses of the node",compute
+Vendor,"Lenovo Global Technology"
+Model,SR655
+"CPU Name","AMD EPYC 7H12 CPU"
+"CPU(s) orderable","1 chip"
+"Chips enabled",1
+"Cores enabled",64
+"Cores per chip",128
+"Threads per core",2
+"CPU Characteristics",None
+"CPU MHz",2600
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","512 KB I+D on chip per core"
+"L3 Cache","256 MB I+D on chip per chip"
+,"16 MB shared / 4 cores"
+"Other Cache",None
+Memory,"256 GB (8 x 32 GB 2Rx8 PC4-3200AA-R)"
+"Disk Subsystem","1 x 480 GB  SATA 2.5"" SSD"
+"Other Hardware",None
+Adapter,"Mellanox ConnectX-6 HDR Infiniband"
+"Number of Adapters",1
+"Slot Type","PCI-Express 4.0 x16"
+"Data Rate",200G
+"Ports Used",1
+"Interconnect Type","Mellanox ConnectX-6 HDR Infiniband VPI Adapter"
+
+SOFTWARE
+
+Adapter,"Mellanox ConnectX-6 HDR Infiniband"
+"Adapter Driver",4.7-1.0.0.1.2
+"Adapter Firmware",None
+"Operating System","Red Hat Enterprise Linux Server release 8.1"
+,4.18.0-147.el8.x86_64
+"Local File System",xfs
+"Shared File System",None
+"System State","Multi-user, run level 3"
+"Other Software",None
+
+

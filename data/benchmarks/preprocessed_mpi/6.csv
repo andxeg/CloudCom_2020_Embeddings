@@ -1,0 +1,14 @@
+Benchmark,"Base # Ranks","Base Run Time","Base Ratio","Base Selected","Base Status","Peak # Ranks","Peak Run Time","Peak Ratio","Peak Selected","Peak Status",Description
+121.pop2,1536,65.340106,59.549949,1,S,,,,,NR,"SelectedIteration (base #2)"
+122.tachyon,1536,55.541142,35.001081,1,S,,,,,NR,"SelectedIteration (base #1)"
+125.RAxML,1536,65.747866,44.396878,1,S,,,,,NR,"SelectedIteration (base #3)"
+126.lammps,1536,42.100335,58.408086,1,S,,,,,NR,"SelectedIteration (base #1)"
+128.GAPgeofem,1536,54.892629,108.101946,1,S,,,,,NR,"SelectedIteration (base #3)"
+129.tera_tf,1536,30.611938,35.901027,1,S,,,,,NR,"SelectedIteration (base #1)"
+132.zeusmp2,1536,42.356155,50.051758,1,S,,,,,NR,"SelectedIteration (base #1)"
+137.lu,1536,25.074103,167.583263,1,S,,,,,NR,"SelectedIteration (base #2)"
+142.dmilc,1536,41.994532,87.725707,1,S,,,,,NR,"SelectedIteration (base #3)"
+143.dleslie,1536,28.55333,108.568773,1,S,,,,,NR,"SelectedIteration (base #3)"
+145.lGemsFDTD,1536,58.677125,75.174099,1,S,,,,,NR,"SelectedIteration (base #2)"
+147.l2wrf2,1536,91.135552,90.019754,1,S,,,,,NR,"SelectedIteration (base #2)"
+

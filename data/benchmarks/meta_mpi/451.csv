@@ -1,0 +1,45 @@
+HARDWARE
+
+"Number of nodes",32
+"Uses of the node",compute
+Vendor,Intel
+Model,"NEC HPC 1812Rg"
+"CPU Name","Intel Xeon E5-2650 v4"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",24
+"Cores per chip",12
+"Threads per core",2
+"CPU Characteristics","Intel Turbo Boost Technology up to"
+,"2.9 GHz (single)/2.2 GHz (all),"
+,"9.6 GT/s QPI, Hyper-Threading enabled"
+"CPU MHz",2200
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","30 MB I+D on chip per chip"
+,"shared / 12 cores"
+"Other Cache",None
+Memory,"128 GB (8 x 16 GB 2Rx8 PC4-2400T-R)"
+"Disk Subsystem","SATA, Samsung SM863, 120GB, SSD"
+"Other Hardware",None
+Adapter,"Intel Omni-Path Host Fabric Interface Adapter 100"
+,"Series 1 Port PCIe X8"
+"Number of Adapters",1
+"Slot Type","PCI-E x8"
+"Data Rate",58Gb/s
+"Ports Used",1
+"Interconnect Type",Omni-Path
+
+SOFTWARE
+
+Adapter,"Intel Omni-Path Host Fabric Interface Adapter 100"
+,"Series 1 Port PCIe X8"
+"Adapter Driver",hfi1
+"Adapter Firmware",2.33.5100
+"Operating System","CentOS Linux release 7.3.1611 (Core)"
+"Local File System",Linux/xfs
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software",None
+
+

@@ -1,0 +1,53 @@
+HARDWARE
+
+"Number of nodes",16
+"Uses of the node",compute
+Vendor,Intel
+Model,R2208WTTYC1
+"CPU Name","Intel Xeon E5-2697 v3"
+"CPU(s) orderable","1-2 chips"
+"Chips enabled",2
+"Cores enabled",28
+"Cores per chip",14
+"Threads per core",2
+"CPU Characteristics","Intel Turbo Boost Technology up to 3.6 GHz,"
+,"9.6 GT/s QPI, Hyper-Threading enabled"
+"CPU MHz",2600
+"Primary Cache","32 KB I + 32 KB D on chip per core"
+"Secondary Cache","256 KB I+D on chip per core"
+"L3 Cache","35 MB I+D on chip per chip, 35 MB"
+,"shared / 14 cores"
+"Other Cache",None
+Memory,"64 GB (8 x 8 GB 2Rx4 PC4-17000R-15, ECC)"
+"Disk Subsystem","ATA INTEL SSDSA2BZ20, SSDSC2BB80"
+"Other Hardware",None
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Number of Adapters",1
+"Slot Type","PCI-Express x8"
+"Data Rate","1Gbps Ethernet"
+"Ports Used",2
+"Interconnect Type",Ethernet
+Adapter,"Mellanox MCX353A-FCAT ConnectX-3"
+"Number of Adapters",1
+"Slot Type","PCIe x8 Gen3"
+"Data Rate","InfiniBand 4x FDR"
+"Ports Used",1
+"Interconnect Type",InfiniBand
+
+SOFTWARE
+
+Adapter,"Intel (ESB2) 82575EB Dual-Port Gigabit"
+,"Ethernet Controller"
+"Adapter Driver",e1000
+"Adapter Firmware",None
+Adapter,"Mellanox MCX353A-FCAT ConnectX-3"
+"Adapter Driver","OFED 3.5-2-MIC-rc1"
+"Adapter Firmware",2.31.5050
+"Operating System","Red Hat EL 6.5, kernel 2.6.32-358"
+"Local File System",Linux/xfs
+"Shared File System",NFS
+"System State",Multi-User
+"Other Software","IBM Platform LSF Standard 9.1.1.1"
+
+
